@@ -29,7 +29,7 @@ Tested with ~200 entries (33 with photos) from Day One to Apple Journal on iPadO
 ## Requirements
 
 - A **Mac** with Python 3.9+ (`python3` comes with macOS; the first run may ask to install developer tools, so say yes)
-- **Apple Journal** on iPadOS 26 / iOS 26 (run the Shortcut on iPad or iPhone, see [Known issues](#known-issues))
+- An **iPad or iPhone** with **Apple Journal** (iPadOS 26 / iOS 26) to run the Shortcut. The Shortcut doesn't run on Mac, see [Known issues](#known-issues)
 - **iCloud Drive**, to move files between Mac and iPad
 
 ---
@@ -93,6 +93,8 @@ Each `.txt` file is one entry:
 
 **Option A: install it:** [Day One to Apple Journal (iCloud Shortcut)](https://www.icloud.com/shortcuts/6fb04219462248c3b867aee35a61bc0c)
 
+> **Open this link on your iPad or iPhone.** On a Mac, Shortcuts may say the Shortcut uses missing features, because macOS Shortcuts doesn't always offer Journal's **Create Entry** action. Run the import on iPad or iPhone instead.
+
 When you add it, Shortcuts lets you review every action first, so check what it does before you install it.
 
 After adding it, open the Shortcut, find **Get File from Folder**, and set **Folder** to your own **iCloud Drive → Journal Import → photos_by_entry**.
@@ -144,7 +146,7 @@ Keep your Day One export ZIP as a backup until you've checked everything.
 
 ## Known issues
 
-- **Shortcuts on macOS can't find Journal's actions** on some Macs. Run the Shortcut on **iPad or iPhone** instead.
+- **The Shortcut doesn't run on Mac**: macOS Shortcuts may not offer Journal's **Create Entry** action, so the shared Shortcut can show "missing features" there. Install and run it on **iPad or iPhone**. Entries sync to your Mac through iCloud.
 - **Location can't be set as a real Journal location**: the Shortcut's location field only accepts a place you pick by hand. Use `--add-location` to keep it as text.
 - **Imports slow down over time**: quit Journal between batches and keep batches at ~100.
 - **Don't run a batch twice**: it creates duplicates. If a batch stops partway, find the newest imported date and run only the remaining files (they're numbered in date order).
