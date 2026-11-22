@@ -154,11 +154,16 @@ Keep your Day One export ZIP as a backup until you've checked everything.
 
 ---
 
+## Alternatives
+
+- **[apple-journal-cli](https://github.com/omarshahine/apple-journal-cli)** by Omar Shahine: a Mac command-line tool that reads Day One's database directly and imports entries with dates, **locations** and photos. It's much faster for large journals and can be re-run to add only new entries. It needs Homebrew, developer tools, Full Disk Access, and your Day One data on the Mac. See [Brian Stucki's walkthrough](https://brianstucki.com/how-to-move-your-journal-entries-from-day-one-to-apple-journal-and-why/).
+- **Use this repo instead** if you'd rather work from a standard Day One **JSON export**, skip developer tools and Full Disk Access, and run the import on **iPad or iPhone**.
+
 ## Credits
 
 - Builds on **Felix Wong's** method: [How I Imported Day One Journal Entries into Apple Journal](https://felixwong.com/2026/08/how-i-imported-day-one-into-apple-journal/). The `date|||title|||text` format and Shortcut idea are his.
 - Tips on batching and quitting Journal between batches from [James Troutman](https://namelyjt.com/2026/11/09/journaling/).
-- This repo adds an offline converter (no AI step), time-zone handling, Day One formatting cleanup, and **automatic photo import**.
+- Compared with Felix's method, this repo adds an offline converter (no AI step), time-zone handling, Day One formatting cleanup, and automatic photo import.
 - Built with help from Claude (Anthropic).
 
 ## License
